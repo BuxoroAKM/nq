@@ -142,3 +142,39 @@ nqselect.onchange = (e) => {
 
 
 };
+
+function changeNq(id) {
+    let itemId = id;
+    let images = nq[itemId].img;
+
+    cardImgDiv1.innerHTML = '';
+    cardImgDiv2.innerHTML = '';
+    for (let i = 0; i < images.length; i++) {
+        let cardButton = document.createElement('button');
+        cardButton.setAttribute('type', 'button');
+        cardButton.setAttribute('data-bs-target', '#carouselExampleIndicators');
+        cardButton.setAttribute('data-bs-slide-to', i);
+        cardButton.setAttribute('aria-label', `Slide ${i + 1}`);
+        cardImgDiv1.appendChild(cardButton);
+
+        let cardImg = document.createElement('div');
+        cardImg.className = 'carousel-item';
+        cardImg.innerHTML = `<img src="${images[i]}" class="cimg" alt="...">`
+        cardImgDiv2.appendChild(cardImg);
+    }
+    cardImgDiv1.firstElementChild.className = 'active';
+    cardImgDiv1.firstElementChild.setAttribute('aria-current', true);
+    cardImgDiv2.firstElementChild.classList.add('active');
+
+
+    nomi.innerHTML = nq[itemId].Nomi;
+    muallif.innerHTML = nq[itemId].Muallif;
+    tili.innerHTML = nq[itemId].Tili;
+    hajmi.innerHTML = nq[itemId].Hajmi;
+    xattot.innerHTML = nq[itemId].Xattot;
+    qulyozma.innerHTML = nq[itemId].Qulyozma;
+    yozuvi.innerHTML = nq[itemId].Yozuvi;
+    muqovasi.innerHTML = nq[itemId].Muqovasi;
+    text.innerHTML = nq[itemId].text;
+};
+window.onload = changeNq(0);
