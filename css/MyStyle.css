@@ -1,0 +1,58 @@
+.MyNav {
+    background-color: #24292F;
+
+}
+
+.MyNav .nav-item a {
+    color: white
+}
+
+.myh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px
+}
+
+.nqic {
+    display: flex;
+    justify-content: center;
+}
+
+.cm {
+
+    min-width: 768px;
+    width: 100%;
+}
+
+.carousel {
+    width: 100%;
+
+
+}
+
+.cimg {
+    width: 100%;
+    height: 100vh;
+
+}
+
+#nqselect{
+    
+  
+}
+.select{
+    top: 0;
+    display: block;
+    position: sticky;
+    z-index: 1;
+}
+#text{
+    text-indent: 20px;
+}
+.carousel-item img{
+    object-fit: contain;
+}
+.footer{
+    text-align: center;
+}
