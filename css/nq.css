@@ -1,0 +1,23 @@
+.wrapper{
+    
+}
+
+#myNav {
+    background-color: #24292F;
+
+}
+
+#myNav a {
+    color: #F1FFFF;
+}
+
+.imgDiv{
+    display: flex;
+    justify-content: center;
+}
+.imgDiv img{
+    width: 900px;
+    height: 700px;
+    object-fit: contain;
+
+}
